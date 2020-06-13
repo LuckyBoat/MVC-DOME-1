@@ -1,0 +1,22 @@
+#app4 {
+}
+#app4 .circle {
+  border: 3px solid pink;
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+}
+@keyframes change {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/* #app4 .circle:hover {
+  animation: change 3s infinite alternate;
+} */
+#app4 .circle.active {
+  animation: change 3s infinite alternate;
+}

@@ -1,0 +1,20 @@
+#app2 ol {
+  list-style: none;
+}
+#app2 .tab_bar {
+  display: flex;
+  flex-direction: row;
+}
+#app2 .tab_bar li {
+  border: 3px solid black;
+  width: 50%;
+}
+#app2 .tab_bar li.selected {
+  background-color: red;
+}
+#app2 .tab_con li {
+  display: none;
+}
+#app2 .tab_con li.active {
+  display: block;
+}

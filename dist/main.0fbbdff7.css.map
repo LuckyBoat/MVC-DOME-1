@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "sources": [
+    "reset.css",
+    "global.css",
+    "app2.css",
+    "app3.css",
+    "app4.css"
+  ],
+  "names": [],
+  "mappings": "AAAA,EACE,QAAS,CACT,SAEF,CACA,iBAFE,qBAKF,CACA,KACE,eACF,CCXA,WACE,YAAa,CACb,kBAAmB,CACnB,cACF,CACA,gBACE,oBAAqB,CACrB,UAAW,CACX,WACF,CCTA,SACE,eACF,CACA,eACE,YAAa,CACb,kBACF,CACA,kBACE,qBAAuB,CACvB,SACF,CACA,2BACE,oBACF,CACA,kBACE,YACF,CACA,yBACE,aACF,CCjBA,cACE,sBAAuB,CACvB,UAAW,CACX,WAAY,CACZ,eAAgB,CAChB,cAAe,CACf,aACF,CACA,qBACE,0BACF,CCVA,cACE,qBAAsB,CACtB,UAAW,CACX,WAAY,CACZ,iBACF,CACA,kBACE,GACE,qBACF,CACA,GACE,oBACF,CACF,CAIA,qBACE,sCACF",
+  "file": "main.0fbbdff7.css",
+  "sourceRoot": "..\\src",
+  "sourcesContent": [
+    "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n*::before,\n*::after {\n  box-sizing: border-box;\n}\nbody {\n  overflow: hidden;\n}\n",
+    "body .page {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\nbody .page .app {\n  border: 1px solid red;\n  width: 50vw;\n  height: 50vh;\n}\n",
+    "#app2 ol {\n  list-style: none;\n}\n#app2 .tab_bar {\n  display: flex;\n  flex-direction: row;\n}\n#app2 .tab_bar li {\n  border: 3px solid black;\n  width: 50%;\n}\n#app2 .tab_bar li.selected {\n  background-color: red;\n}\n#app2 .tab_con li {\n  display: none;\n}\n#app2 .tab_con li.active {\n  display: block;\n}\n",
+    "#app3 {\n}\n#app3 .square {\n  border: 3px solid green;\n  width: 20vh;\n  height: 20vh;\n  margin-left: 5vh;\n  margin-top: 5vh;\n  transition: 1s;\n}\n#app3 .square.active {\n  transform: translateX(15vw);\n}\n",
+    "#app4 {\n}\n#app4 .circle {\n  border: 3px solid pink;\n  width: 25vh;\n  height: 25vh;\n  border-radius: 50%;\n}\n@keyframes change {\n  0% {\n    background-color: blue;\n  }\n  100% {\n    background-color: red;\n  }\n}\n/* #app4 .circle:hover {\n  animation: change 3s infinite alternate;\n} */\n#app4 .circle.active {\n  animation: change 3s infinite alternate;\n}\n"
+  ]
+}

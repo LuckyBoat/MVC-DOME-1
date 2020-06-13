@@ -1,0 +1,10 @@
+body .page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .page .app {
+  border: 1px solid red;
+  width: 50vw;
+  height: 50vh;
+}

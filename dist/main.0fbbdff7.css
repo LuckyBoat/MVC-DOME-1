@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+body .page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .page .app {
+  border: 1px solid red;
+  width: 50vw;
+  height: 50vh;
+}
+#app2 ol {
+  list-style: none;
+}
+#app2 .tab_bar {
+  display: flex;
+  flex-direction: row;
+}
+#app2 .tab_bar li {
+  border: 3px solid #000;
+  width: 50%;
+}
+#app2 .tab_bar li.selected {
+  background-color: red;
+}
+#app2 .tab_con li {
+  display: none;
+}
+#app2 .tab_con li.active {
+  display: block;
+}
+#app3 .square {
+  border: 3px solid green;
+  width: 20vh;
+  height: 20vh;
+  margin-left: 5vh;
+  margin-top: 5vh;
+  transition: 1s;
+}
+#app3 .square.active {
+  transform: translateX(15vw);
+}
+#app4 .circle {
+  border: 3px solid pink;
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+}
+@keyframes change {
+  0% {
+    background-color: #00f;
+  }
+  to {
+    background-color: red;
+  }
+}
+#app4 .circle.active {
+  animation: change 3s infinite alternate;
+}
+/*# sourceMappingURL=main.0fbbdff7.css.map */
